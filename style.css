@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "ロゴたいぷゴシック-コンデンスド";
+  src: url('https://cdn.leafscape.be/LogoTypeGothicCondense/07LogoTypeGothic-Condense_web.woff2') format("woff2");
+}
+
+.home-tagline {
+    font-family: "ロゴたいぷゴシック-コンデンスド", sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+}
+
+/* --------------------------------
+// Basic Styles
+// -------------------------------- */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fdfdfa; /* Very light, warm off-white */
+    color: #545454; /* Dark grey for text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding-top: 70px; /* Adjust for navbar height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif JP', serif;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* --------------------------------
+// Navigation
+// -------------------------------- */
+.navbar {
+    border-bottom: 1px solid #eee;
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* --------------------------------
+// Hero (Home) Section
+// -------------------------------- */
+#home {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333; /* Darker text for better readability on light backgrounds */
+    text-shadow: none; /* Remove shadow for a cleaner look */
+    padding: 100px 0;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Suggest a softer, more natural image */
+    background: url('https://placehold.co/1920x1080/f0f2f0/white?text=Soft+Natural+Image') no-repeat center center/cover;
+    filter: brightness(0.95);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#home .display-4 {
+    font-weight: 400;
+}
+
+/* --------------------------------
+// Card Styles (Menu)
+// -------------------------------- */
+.card {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --------------------------------
+// Contact & Links
+// -------------------------------- */
+.contact-link {
+    color: #8a9a8a; /* Muted green */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    color: #6d7b6d; /* Darker green on hover */
+    text-decoration: underline;
+}
+
+.btn-outline-custom {
+    color: #8a9a8a;
+    border-color: #8a9a8a;
+}
+
+.btn-outline-custom:hover {
+    color: #fff;
+    background-color: #8a9a8a;
+    border-color: #8a9a8a;
+}
+
+/* --------------------------------
+// Map Section
+// -------------------------------- */
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --------------------------------
+// Footer
+// -------------------------------- */
+footer {
+    background-color: #f8f9fa; /* A very light grey for footer */
+    border-top: 1px solid #eee;
+}
