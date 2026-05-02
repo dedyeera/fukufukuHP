@@ -33,8 +33,38 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif JP', serif;
 }
 
-section {
-    padding: 80px 0;
+    section {
+        padding: 40px 0;
+    }
+
+    /* スマートフォンでの背景画像の位置調整 */
+    #home {
+        background-position: center top; /* 画像の上部が中央に来るように調整 */
+    }
+
+    #home::before {
+        background-position: center top; /* 背景画像の位置も調整 */
+    }
+
+    /* スマートフォンでの文字サイズ調整 */
+    body {
+        font-size: 0.95rem; /* 全体のフォントサイズを少し小さく */
+    }
+
+    .card-text.small {
+        font-size: 0.85rem; /* カード内の小さい文字を調整 */
+    }
+
+    /* ボタンのパディング調整 */
+    .btn-outline-custom {
+        padding: 0.5rem 1rem; /* ボタンのパディングを調整 */
+        font-size: 0.9rem; /* ボタンのフォントサイズを調整 */
+    }
+
+    /* ナビゲーションリンクのパディング調整 */
+    .navbar-nav .nav-item {
+        margin-bottom: 5px; /* ナビゲーションアイテム間の余白 */
+    }
 }
 
 /* --------------------------------
